@@ -1,12 +1,18 @@
 # COMET run fixer
 
-Jupyter notebook to register and merge two OME-TIFF files derived from interrupted COMET runs.  
+Script to register and merge two OME-TIFF files derived from interrupted COMET runs.  
 The registration is performed with palom: https://github.com/labsyspharm/palom
 
 ## Usage
-The script is for now run as a Jupyter Notebook.
+
+From the command line:
+```
+python3 comet_fixer.py image1 image2 output_image
+```
 
 ### Setup
+
+Best used from a mamba environment.
 
 Requirements:
 ```
@@ -29,4 +35,4 @@ The channel and cycle metadata from the second file are added to the ones from t
 The output OME-TIFF file can be read with the COMET Horizon VIewer.
 
 ## TO-DO
-Convert to a python script able to handle a folder with multiple files from a single run.
+Take as input a folder with an arbitrary number of images from the same run, instead of 2 files.
