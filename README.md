@@ -1,6 +1,6 @@
 # COMET run fixer
 
-Script to register and merge two OME-TIFF files derived from interrupted COMET runs.  
+Script to register and merge two OME-TIFF files derived from interrupted COMET runs for which the original tiles are not available.
 The registration is performed with palom: https://github.com/labsyspharm/palom
 
 ## Usage
